@@ -11,10 +11,8 @@ engine = create_engine('postgresql://rafael:rafael@localhost:5432/mydb')
 connection = engine.connect()
 
 def selecionaCriterios(campoUsuario, valorUsuario):
-    query = "SELECT * FROM cars WHERE brand = %(valor)s"
-    params={"campo":campoUsuario, "valor":valorUsuario}
-    df = psql.read_sql(query, engine, params=params)
+    query = "SELECT * FROM cars WHERE %(campo)s = %(valor)s;"
+    parametros={"campo":campoUsuario, "valor":valorUsuario}
+    df = psql.read_sql(query, engine, params=parametros)
     return df
 
-# SELECT * FROM cars WHERE brand = 'Tesla';
-# %(campo)s=%(marca)s
