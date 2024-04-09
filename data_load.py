@@ -3,16 +3,17 @@ import util
 import streamlit as st
 import pandas as pd
 
-def data_load():
+def data_load_tab():
 
     if(not(config.connection)):
        st.error("Sem conexão com o banco de dados")
 
     else:
+        st.write("Carregou o banco")
         with st.expander("Carregar dados", expanded=True):
             form_sql_statement = st.form(key='form_sql_statement')
 
-            sql_statement = form_sql_statement.text_area("Consulta (em SQL):", value="SELECT PROGRAMA, AREA_DC, VALOR_TOTAL_DESPACHO_ULT_PROP, DATA_DO_DESPACHO_FINAL FROM SYSTEM.F03")
+            sql_statement = form_sql_statement.text_area("Consulta (em SQL):")
             sql_submitted = form_sql_statement.form_submit_button("Fazer consulta", use_container_width=True)
 
             if sql_submitted:

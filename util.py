@@ -3,9 +3,6 @@ import config
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
-import plotly.express as px
-import plotly.graph_objs as go
 from pyvis.network import Network
 import networkx as nx
 
