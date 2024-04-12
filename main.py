@@ -12,7 +12,7 @@ st.title('Projeto IC - OMOP')
 with st.sidebar:
     st.write(
         """
-        Projeto de Iniciação Científica\n
+        Projeto de Iniciação Científica OMOP-CDM\n
         """
     )
 
