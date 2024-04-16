@@ -1,3 +1,5 @@
 
 /my-env
 /__pycache__
+demo/tgraph/__pycache__/static_graph.cpython-38.pyc
+*.pyc

@@ -10,9 +10,3 @@ from sqlalchemy import create_engine
 engine = create_engine('postgresql://rafael:rafael@localhost:5432/mydb') 
 connection = engine.connect()
 
-# def selecionaCriterios(campoUsuario, valorUsuario):
-#     query = "SELECT * FROM cars WHERE %(campo)s = %(valor)s;"
-#     parametros={"campo":campoUsuario, "valor":valorUsuario}
-#     df = psql.read_sql(query, engine, params=parametros)
-#     return df
-

@@ -1,7 +1,7 @@
 import config
 import util 
-from data_load import data_load_tab
-from eda import eda_tab
+from tab_data_load import data_load_tab
+from tab_eda import eda_tab
 import pandas as pd
 import streamlit as st
 
