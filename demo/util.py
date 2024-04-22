@@ -7,12 +7,17 @@ import plotly.express as px
 import plotly.graph_objects as go
 from pyvis.network import Network
 import networkx as nx
-import matplotlib as plt
+
+import matplotlib.pyplot as plt
 import matplotlib.colors 
 import matplotlib.patches as patches
 
 sys.path.insert(0, "tgraph")
 from tgraph import TGraph, fn
+
+plt.rcParams.update({'font.size': 12})
+figsize=[8, 6]
+
 
 def run_query(sql_statement):
 
@@ -26,6 +31,21 @@ def run_query(sql_statement):
         df_query_result = None
 
     return df_query_result
+
+
+def read_supervision_data():
+    try:
+        config.df_query_supervision = pd.read_csv('../presaved_queries/v1_pesquisador-orienta.csv')
+        config.df_tgraph_features_supervision = pd.read_csv('../presaved_queries/v1_features_nomeorientador_nomeorientado_none_anoorientacao.csv')
+
+        config.df_tgraph_features_supervision = config.df_tgraph_features_supervision.rename(columns=config.feature_names_supervision)
+
+        seconds_per_year = 365 * 24 * 60 * 60 # not considering leap years
+        config.df_tgraph_features_supervision[config.iat_feature_names_supervision] = config.df_tgraph_features_supervision[config.iat_feature_names_supervision]/seconds_per_year
+        
+    except Exception as ex:
+        print(ex)
+        print('Erro ao carregar consulta previamente salva')
 
 
 
