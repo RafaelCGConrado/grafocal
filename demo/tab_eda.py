@@ -137,7 +137,7 @@ def eda_tab():
             
             c1_col_hexbin, _, c2_col_hexbin = st.columns([5,1,5])
             with c1_col_hexbin:
-                st.plotly_chart(util.plot_interactive_scatter(df=config.df_tgraph_features,
+                st.plotly_chart(util.plot_interactive_scatter(
                                         c1=selected_feature_hexbin1,
                                         c2=selected_feature_hexbin2))
             with c2_col_hexbin:
@@ -150,7 +150,7 @@ def eda_tab():
             col1_scatter_matrix_options, col2_scatter_matrix_options = st.columns([5,1])
 
             with col1_scatter_matrix_options:
-                config.columns_matrix_lasso = st.multiselect("Selecione as características a visualizar",
+                config.columns_matrix_lasso = st.multiselect("Selecione (três ou mais) características a visualizar",
                                                              help="Selecione três ou mais características",
                                                              options=config.df_tgraph_features.columns[1:].values)
             
