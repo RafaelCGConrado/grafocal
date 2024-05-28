@@ -122,11 +122,12 @@ def plot_hexbin(df=config.df_tgraph_features, c1=None, c2=None,
     return fig_hexbin
 
 
-def plot_interactive_scatter(df=config.df_tgraph_features, c1=None, c2=None):
+def plot_interactive_scatter(c1=None, c2=None):
     """
     Plot hexbin with selected features
     """
-
+    df=config.df_tgraph_features
+    
     fig_interactive_scatter = px.scatter(df, x=c1, y=c2,
                                          hover_data={config.NODE_ID},
                                         #  trendline="ols"
@@ -136,12 +137,13 @@ def plot_interactive_scatter(df=config.df_tgraph_features, c1=None, c2=None):
     return fig_interactive_scatter
 
 
-def plot_lasso_scatter_matrix(df=config.df_tgraph_features):
+def plot_lasso_scatter_matrix():
     """
     Plot interactive scatter plot with the selected columns as features
 
     """
-
+    df=config.df_tgraph_features
+    
     # truecolor = '#f95a10'
     falsecolor = 'blue'
     # linecolor = 'white'
