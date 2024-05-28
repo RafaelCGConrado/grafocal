@@ -62,4 +62,3 @@ class TemporalGraph():
                                                                       right_on=node_direction, how='left')
         self.data_network.df_nodes = self.data_network.df_nodes.drop(columns=[node_direction])
         self.data_network.df_nodes = self.data_network.df_nodes.fillna(0)
-        

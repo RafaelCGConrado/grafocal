@@ -33,22 +33,6 @@ def run_query(sql_statement):
     return df_query_result
 
 
-def read_supervision_data():
-    try:
-        config.df_query_supervision = pd.read_csv('../presaved_queries/v1_pesquisador-orienta.csv')
-        config.df_tgraph_features_supervision = pd.read_csv('../presaved_queries/v1_features_nomeorientador_nomeorientado_none_anoorientacao.csv')
-
-        config.df_tgraph_features_supervision = config.df_tgraph_features_supervision.rename(columns=config.feature_names_supervision)
-
-        seconds_per_year = 365 * 24 * 60 * 60 # not considering leap years
-        config.df_tgraph_features_supervision[config.iat_feature_names_supervision] = config.df_tgraph_features_supervision[config.iat_feature_names_supervision]/seconds_per_year
-        
-    except Exception as ex:
-        print(ex)
-        print('Erro ao carregar consulta previamente salva')
-
-
-
 def run_t_graph(df, source, destination, measure, timestamp):
     print(source, destination, measure, timestamp)
 
@@ -161,7 +145,7 @@ def plot_lasso_scatter_matrix(df=config.df_tgraph_features):
     # truecolor = '#f95a10'
     falsecolor = 'blue'
     # linecolor = 'white'
-
+    
     dimensions=[]
     for c in config.columns_matrix_lasso:
         # Construct dict with column names and labels

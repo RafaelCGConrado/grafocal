@@ -16,7 +16,7 @@ def launch_dashboard():
 
     # update_sidebar()
 
-    tab_data_load, tab_omopcdm, tab_eda = st.tabs(["Carregar Dados", "OMOP-CDM", "EDA"])
+    tab_data_load, tab_omopcdm, tab_eda = st.tabs(["Carregar Dados", "OMOP-CDM", "Tgraph"])
 
     with tab_data_load:
         data_load_tab()

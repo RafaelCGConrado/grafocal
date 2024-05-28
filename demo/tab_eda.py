@@ -5,6 +5,7 @@ import streamlit.components.v1 as components
 from streamlit_plotly_events import plotly_events
 import pandas as pd
 
+
 def eda_tab():
 
     if config.flag_data_loaded:

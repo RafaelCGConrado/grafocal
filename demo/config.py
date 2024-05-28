@@ -6,6 +6,13 @@ df_query_all_tables = None
 df_query_result = None
 df_tgraph_features = None
 
+available_features = None 
+NxGraph = None 
+
+df_query_supervision = None 
+df_tgraph_features_supervision = None
+
+
 #flag
 flag_data_loaded = None
 flag_use_prefix_in_graph = False
@@ -28,12 +35,12 @@ plotly_height = 800
 
 columns_matrix_lasso = []
 selected_points_lasso = []
-df_selected = None 
+df_selected = None
 
-opt_logx_hexbin = False 
-opt_logy_hexbin = False 
+opt_logx_hexbin = False
+opt_logy_hexbin = False
 
-opt_logx_scatter_matrix = False 
+opt_logx_scatter_matrix = False
 opt_logy_scatter_matrix = False
 
 
