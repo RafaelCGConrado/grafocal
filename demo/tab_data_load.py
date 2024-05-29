@@ -9,7 +9,7 @@ def data_load_tab():
        st.error("Sem conexão com o banco de dados")
 
     else:
-        st.write("Carregou o banco")
+        st.write("Base de dados conectada")
         with st.expander("Carregar dados", expanded=True):
             form_sql_statement = st.form(key='form_sql_statement')
 
@@ -21,7 +21,7 @@ def data_load_tab():
 
             if config.df_query_result is not None:
                 config.flag_data_loaded = True
-                st.dataframe(config.df_query_result.head(), use_container_width=True)
+                st.dataframe(config.df_query_result.head(), use_container_width=True) #limitar qtd de tuplas
                 st.write("Tuplas no dataframe resultante:", len(config.df_query_result))
                 st.success("Consulta realizada com sucesso")
 

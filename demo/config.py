@@ -47,5 +47,5 @@ opt_logy_scatter_matrix = False
 
 NODE_ID = "node_ID"
 
-engine = create_engine('postgresql://rafael:rafael@localhost:5432/mydb') 
+engine = create_engine('postgresql://rafael:rafael@localhost:5432/incordb') 
 connection = engine.connect()

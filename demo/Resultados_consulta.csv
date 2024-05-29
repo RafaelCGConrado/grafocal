@@ -1,10 +1,2 @@
-brand,model,year,frequencia
-Ford,Mustang,1964,1
-Volvo,p1800,1968,1
-BMW,M1,1978,1
-Toyota,Celica,1975,1
-BMW,iX3,2020,1
-Chevrolet,Trax,2013,1
-Chevrolet,Nubira,2005,1
-Fiat,500e,2020,1
-Tesla,Model S,2016,1
+current_database
+incordb
