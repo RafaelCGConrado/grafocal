@@ -16,13 +16,10 @@ def launch_dashboard():
 
     # update_sidebar()
 
-    tab_data_load, tab_omopcdm, tab_eda = st.tabs(["Carregar Dados", "OMOP-CDM", "Tgraph"])
+    tab_data_load, tab_eda = st.tabs(["Carregar Dados", "Tgraph"])
 
     with tab_data_load:
         data_load_tab()
-    
-    with tab_omopcdm:
-        st.write("Nada por enquanto")
 
     with tab_eda:
         eda_tab()

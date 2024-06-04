@@ -21,7 +21,7 @@ def data_load_tab():
 
             if config.df_query_result is not None:
                 config.flag_data_loaded = True
-                st.dataframe(config.df_query_result.head(), use_container_width=True) #limitar qtd de tuplas
+                st.dataframe(config.df_query_result, use_container_width=True)
                 st.write("Tuplas no dataframe resultante:", len(config.df_query_result))
                 st.success("Consulta realizada com sucesso")
 

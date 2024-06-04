@@ -10,7 +10,6 @@ def eda_tab():
 
     if config.flag_data_loaded:
 
-        st.write("achamos a porra da tupla")
         with st.expander(label="Selecione as opções do grafo", expanded=True):
             cc1, cc2, cc3, cc4 = st.columns(4)
 

@@ -49,3 +49,7 @@ NODE_ID = "node_ID"
 
 engine = create_engine('postgresql://rafael:rafael@localhost:5432/incordb') 
 connection = engine.connect()
+
+#SELECT * FROM OMOP5.death LIMIT 100
+
+#pegar duas tabelas e criar semantica
