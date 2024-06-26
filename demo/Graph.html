@@ -238,6 +238,75 @@ function highlightFilter(filter) {
              }
 
              
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
 
              
 
@@ -261,37 +330,221 @@ function highlightFilter(filter) {
                             >
                                 <option selected>Select a Node by ID</option>
                                 
-                                    <option value="brand_Ford">brand_Ford</option>
+                                    <option value="drug_exposure_id_4635955223603799">drug_exposure_id_4635955223603799</option>
                                 
-                                    <option value="model_Mustang">model_Mustang</option>
+                                    <option value="person_id_6728169377552940">person_id_6728169377552940</option>
                                 
-                                    <option value="brand_Volvo">brand_Volvo</option>
+                                    <option value="drug_exposure_id_7875054233303023">drug_exposure_id_7875054233303023</option>
                                 
-                                    <option value="model_p1800">model_p1800</option>
+                                    <option value="drug_exposure_id_6244000366486440">drug_exposure_id_6244000366486440</option>
                                 
-                                    <option value="brand_BMW">brand_BMW</option>
+                                    <option value="drug_exposure_id_6298160023483616">drug_exposure_id_6298160023483616</option>
                                 
-                                    <option value="model_M1">model_M1</option>
+                                    <option value="drug_exposure_id_6348649864653869">drug_exposure_id_6348649864653869</option>
                                 
-                                    <option value="model_iX3">model_iX3</option>
+                                    <option value="drug_exposure_id_1755713904695286">drug_exposure_id_1755713904695286</option>
                                 
-                                    <option value="brand_Toyota">brand_Toyota</option>
+                                    <option value="drug_exposure_id_4626106537613179">drug_exposure_id_4626106537613179</option>
                                 
-                                    <option value="model_Celica">model_Celica</option>
+                                    <option value="drug_exposure_id_7514713921713326">drug_exposure_id_7514713921713326</option>
                                 
-                                    <option value="brand_Chevrolet">brand_Chevrolet</option>
+                                    <option value="drug_exposure_id_4270805493435348">drug_exposure_id_4270805493435348</option>
                                 
-                                    <option value="model_Trax">model_Trax</option>
+                                    <option value="drug_exposure_id_957343825438856">drug_exposure_id_957343825438856</option>
                                 
-                                    <option value="model_Nubira">model_Nubira</option>
+                                    <option value="drug_exposure_id_599295747218609">drug_exposure_id_599295747218609</option>
                                 
-                                    <option value="brand_Fiat">brand_Fiat</option>
+                                    <option value="drug_exposure_id_8228822809005042">drug_exposure_id_8228822809005042</option>
                                 
-                                    <option value="model_500e">model_500e</option>
+                                    <option value="drug_exposure_id_1798294980109687">drug_exposure_id_1798294980109687</option>
                                 
-                                    <option value="brand_Tesla">brand_Tesla</option>
+                                    <option value="drug_exposure_id_1300093645790922">drug_exposure_id_1300093645790922</option>
                                 
-                                    <option value="model_Model S">model_Model S</option>
+                                    <option value="drug_exposure_id_2422401152708180">drug_exposure_id_2422401152708180</option>
+                                
+                                    <option value="drug_exposure_id_1339256052685649">drug_exposure_id_1339256052685649</option>
+                                
+                                    <option value="drug_exposure_id_3723080862624726">drug_exposure_id_3723080862624726</option>
+                                
+                                    <option value="drug_exposure_id_2436285772113948">drug_exposure_id_2436285772113948</option>
+                                
+                                    <option value="drug_exposure_id_1031518120432746">drug_exposure_id_1031518120432746</option>
+                                
+                                    <option value="drug_exposure_id_4633205526024838">drug_exposure_id_4633205526024838</option>
+                                
+                                    <option value="drug_exposure_id_5721821437122807">drug_exposure_id_5721821437122807</option>
+                                
+                                    <option value="drug_exposure_id_3842826423681681">drug_exposure_id_3842826423681681</option>
+                                
+                                    <option value="drug_exposure_id_2139702551374261">drug_exposure_id_2139702551374261</option>
+                                
+                                    <option value="drug_exposure_id_3699646532966243">drug_exposure_id_3699646532966243</option>
+                                
+                                    <option value="drug_exposure_id_8373760849092977">drug_exposure_id_8373760849092977</option>
+                                
+                                    <option value="drug_exposure_id_5219669902688163">drug_exposure_id_5219669902688163</option>
+                                
+                                    <option value="drug_exposure_id_320450054098415">drug_exposure_id_320450054098415</option>
+                                
+                                    <option value="drug_exposure_id_3330836851821922">drug_exposure_id_3330836851821922</option>
+                                
+                                    <option value="person_id_4107108745512203">person_id_4107108745512203</option>
+                                
+                                    <option value="drug_exposure_id_4451635488046211">drug_exposure_id_4451635488046211</option>
+                                
+                                    <option value="drug_exposure_id_3724268607071327">drug_exposure_id_3724268607071327</option>
+                                
+                                    <option value="drug_exposure_id_8758701692047496">drug_exposure_id_8758701692047496</option>
+                                
+                                    <option value="drug_exposure_id_70859798695355">drug_exposure_id_70859798695355</option>
+                                
+                                    <option value="drug_exposure_id_1317979231537146">drug_exposure_id_1317979231537146</option>
+                                
+                                    <option value="drug_exposure_id_6681367385895186">drug_exposure_id_6681367385895186</option>
+                                
+                                    <option value="drug_exposure_id_821164210411544">drug_exposure_id_821164210411544</option>
+                                
+                                    <option value="drug_exposure_id_6317681826354594">drug_exposure_id_6317681826354594</option>
+                                
+                                    <option value="drug_exposure_id_5301463460963233">drug_exposure_id_5301463460963233</option>
+                                
+                                    <option value="drug_exposure_id_751264706544517">drug_exposure_id_751264706544517</option>
+                                
+                                    <option value="drug_exposure_id_7915656819927548">drug_exposure_id_7915656819927548</option>
+                                
+                                    <option value="drug_exposure_id_6920261107311887">drug_exposure_id_6920261107311887</option>
+                                
+                                    <option value="drug_exposure_id_1504239805141469">drug_exposure_id_1504239805141469</option>
+                                
+                                    <option value="drug_exposure_id_6805437237030132">drug_exposure_id_6805437237030132</option>
+                                
+                                    <option value="drug_exposure_id_6316456070288067">drug_exposure_id_6316456070288067</option>
+                                
+                                    <option value="drug_exposure_id_4226958811948178">drug_exposure_id_4226958811948178</option>
+                                
+                                    <option value="drug_exposure_id_1853959786238834">drug_exposure_id_1853959786238834</option>
+                                
+                                    <option value="drug_exposure_id_1929579265244441">drug_exposure_id_1929579265244441</option>
+                                
+                                    <option value="drug_exposure_id_3865019647817614">drug_exposure_id_3865019647817614</option>
+                                
+                                    <option value="drug_exposure_id_1975321241007933">drug_exposure_id_1975321241007933</option>
+                                
+                                    <option value="person_id_601475176545263">person_id_601475176545263</option>
+                                
+                                    <option value="drug_exposure_id_6221894899947836">drug_exposure_id_6221894899947836</option>
+                                
+                                    <option value="drug_exposure_id_2841442331147788">drug_exposure_id_2841442331147788</option>
+                                
+                                    <option value="drug_exposure_id_5752963204519392">drug_exposure_id_5752963204519392</option>
+                                
+                                    <option value="drug_exposure_id_1806846850184295">drug_exposure_id_1806846850184295</option>
+                                
+                                    <option value="drug_exposure_id_1216358274903313">drug_exposure_id_1216358274903313</option>
+                                
+                                    <option value="drug_exposure_id_8182873385115800">drug_exposure_id_8182873385115800</option>
+                                
+                                    <option value="drug_exposure_id_2180258383708062">drug_exposure_id_2180258383708062</option>
+                                
+                                    <option value="drug_exposure_id_5384249682357339">drug_exposure_id_5384249682357339</option>
+                                
+                                    <option value="drug_exposure_id_3257552142942390">drug_exposure_id_3257552142942390</option>
+                                
+                                    <option value="drug_exposure_id_3109550251999446">drug_exposure_id_3109550251999446</option>
+                                
+                                    <option value="person_id_1758302236924648">person_id_1758302236924648</option>
+                                
+                                    <option value="drug_exposure_id_1513013502213976">drug_exposure_id_1513013502213976</option>
+                                
+                                    <option value="person_id_5678135080111233">person_id_5678135080111233</option>
+                                
+                                    <option value="drug_exposure_id_5343891653950457">drug_exposure_id_5343891653950457</option>
+                                
+                                    <option value="drug_exposure_id_5376052800695996">drug_exposure_id_5376052800695996</option>
+                                
+                                    <option value="drug_exposure_id_7247328566250566">drug_exposure_id_7247328566250566</option>
+                                
+                                    <option value="drug_exposure_id_5327403071144026">drug_exposure_id_5327403071144026</option>
+                                
+                                    <option value="drug_exposure_id_8331263118410675">drug_exposure_id_8331263118410675</option>
+                                
+                                    <option value="drug_exposure_id_919043036533482">drug_exposure_id_919043036533482</option>
+                                
+                                    <option value="drug_exposure_id_8506199351631658">drug_exposure_id_8506199351631658</option>
+                                
+                                    <option value="drug_exposure_id_7087626858392007">drug_exposure_id_7087626858392007</option>
+                                
+                                    <option value="drug_exposure_id_4086654865368483">drug_exposure_id_4086654865368483</option>
+                                
+                                    <option value="drug_exposure_id_7266421645208073">drug_exposure_id_7266421645208073</option>
+                                
+                                    <option value="drug_exposure_id_3900365533490219">drug_exposure_id_3900365533490219</option>
+                                
+                                    <option value="drug_exposure_id_2502162696530676">drug_exposure_id_2502162696530676</option>
+                                
+                                    <option value="drug_exposure_id_4301882002011806">drug_exposure_id_4301882002011806</option>
+                                
+                                    <option value="drug_exposure_id_2890896219975820">drug_exposure_id_2890896219975820</option>
+                                
+                                    <option value="drug_exposure_id_6309069691945488">drug_exposure_id_6309069691945488</option>
+                                
+                                    <option value="drug_exposure_id_6175476414553252">drug_exposure_id_6175476414553252</option>
+                                
+                                    <option value="drug_exposure_id_8883365172427810">drug_exposure_id_8883365172427810</option>
+                                
+                                    <option value="drug_exposure_id_7704733280383419">drug_exposure_id_7704733280383419</option>
+                                
+                                    <option value="drug_exposure_id_4498574623014105">drug_exposure_id_4498574623014105</option>
+                                
+                                    <option value="drug_exposure_id_6056201194485203">drug_exposure_id_6056201194485203</option>
+                                
+                                    <option value="person_id_1175042839979859">person_id_1175042839979859</option>
+                                
+                                    <option value="drug_exposure_id_2796848800248737">drug_exposure_id_2796848800248737</option>
+                                
+                                    <option value="drug_exposure_id_4341324273874908">drug_exposure_id_4341324273874908</option>
+                                
+                                    <option value="drug_exposure_id_1863205984318974">drug_exposure_id_1863205984318974</option>
+                                
+                                    <option value="drug_exposure_id_638856402197124">drug_exposure_id_638856402197124</option>
+                                
+                                    <option value="drug_exposure_id_5572751668634152">drug_exposure_id_5572751668634152</option>
+                                
+                                    <option value="drug_exposure_id_6103616315978364">drug_exposure_id_6103616315978364</option>
+                                
+                                    <option value="drug_exposure_id_3348656824194457">drug_exposure_id_3348656824194457</option>
+                                
+                                    <option value="drug_exposure_id_1077519728957675">drug_exposure_id_1077519728957675</option>
+                                
+                                    <option value="drug_exposure_id_7836457479237764">drug_exposure_id_7836457479237764</option>
+                                
+                                    <option value="drug_exposure_id_3158294524270012">drug_exposure_id_3158294524270012</option>
+                                
+                                    <option value="person_id_5757354914575627">person_id_5757354914575627</option>
+                                
+                                    <option value="drug_exposure_id_786296945579754">drug_exposure_id_786296945579754</option>
+                                
+                                    <option value="drug_exposure_id_7581876095913566">drug_exposure_id_7581876095913566</option>
+                                
+                                    <option value="drug_exposure_id_6058438924657163">drug_exposure_id_6058438924657163</option>
+                                
+                                    <option value="drug_exposure_id_2287382651840938">drug_exposure_id_2287382651840938</option>
+                                
+                                    <option value="drug_exposure_id_3790729280729400">drug_exposure_id_3790729280729400</option>
+                                
+                                    <option value="drug_exposure_id_1761944461656635">drug_exposure_id_1761944461656635</option>
+                                
+                                    <option value="drug_exposure_id_3124858992119784">drug_exposure_id_3124858992119784</option>
+                                
+                                    <option value="drug_exposure_id_2630786388146157">drug_exposure_id_2630786388146157</option>
+                                
+                                    <option value="person_id_35092165729618">person_id_35092165729618</option>
+                                
+                                    <option value="drug_exposure_id_1932843877470658">drug_exposure_id_1932843877470658</option>
+                                
+                                    <option value="drug_exposure_id_1226441765425775">drug_exposure_id_1226441765425775</option>
+                                
+                                    <option value="drug_exposure_id_5230558556355738">drug_exposure_id_5230558556355738</option>
                                 
                             </select>
                         </div>
@@ -305,6 +558,15 @@ function highlightFilter(filter) {
             <div id="mynetwork" class="card-body"></div>
         </div>
 
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
         
         
 
@@ -345,8 +607,8 @@ function highlightFilter(filter) {
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "brand_Ford", "label": "brand_Ford", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_Mustang", "label": "model_Mustang", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_Volvo", "label": "brand_Volvo", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_p1800", "label": "model_p1800", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_BMW", "label": "brand_BMW", "shape": "dot", "size": 2}, {"color": "#97c2fc", "id": "model_M1", "label": "model_M1", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_iX3", "label": "model_iX3", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_Toyota", "label": "brand_Toyota", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_Celica", "label": "model_Celica", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_Chevrolet", "label": "brand_Chevrolet", "shape": "dot", "size": 2}, {"color": "#97c2fc", "id": "model_Trax", "label": "model_Trax", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_Nubira", "label": "model_Nubira", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_Fiat", "label": "brand_Fiat", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_500e", "label": "model_500e", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "brand_Tesla", "label": "brand_Tesla", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "model_Model S", "label": "model_Model S", "shape": "dot", "size": 1}]);
-                  edges = new vis.DataSet([{"from": "brand_Ford", "measure": 1, "to": "model_Mustang", "width": 1}, {"from": "brand_Volvo", "measure": 1, "to": "model_p1800", "width": 1}, {"from": "brand_BMW", "measure": 1, "to": "model_M1", "width": 1}, {"from": "brand_BMW", "measure": 1, "to": "model_iX3", "width": 1}, {"from": "brand_Toyota", "measure": 1, "to": "model_Celica", "width": 1}, {"from": "brand_Chevrolet", "measure": 1, "to": "model_Trax", "width": 1}, {"from": "brand_Chevrolet", "measure": 1, "to": "model_Nubira", "width": 1}, {"from": "brand_Fiat", "measure": 1, "to": "model_500e", "width": 1}, {"from": "brand_Tesla", "measure": 1, "to": "model_Model S", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "drug_exposure_id_4635955223603799", "label": "drug_exposure_id_4635955223603799", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_6728169377552940", "label": "person_id_6728169377552940", "shape": "dot", "size": 27}, {"color": "#97c2fc", "id": "drug_exposure_id_7875054233303023", "label": "drug_exposure_id_7875054233303023", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6244000366486440", "label": "drug_exposure_id_6244000366486440", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6298160023483616", "label": "drug_exposure_id_6298160023483616", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6348649864653869", "label": "drug_exposure_id_6348649864653869", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1755713904695286", "label": "drug_exposure_id_1755713904695286", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4626106537613179", "label": "drug_exposure_id_4626106537613179", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7514713921713326", "label": "drug_exposure_id_7514713921713326", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4270805493435348", "label": "drug_exposure_id_4270805493435348", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_957343825438856", "label": "drug_exposure_id_957343825438856", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_599295747218609", "label": "drug_exposure_id_599295747218609", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8228822809005042", "label": "drug_exposure_id_8228822809005042", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1798294980109687", "label": "drug_exposure_id_1798294980109687", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1300093645790922", "label": "drug_exposure_id_1300093645790922", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2422401152708180", "label": "drug_exposure_id_2422401152708180", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1339256052685649", "label": "drug_exposure_id_1339256052685649", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3723080862624726", "label": "drug_exposure_id_3723080862624726", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2436285772113948", "label": "drug_exposure_id_2436285772113948", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1031518120432746", "label": "drug_exposure_id_1031518120432746", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4633205526024838", "label": "drug_exposure_id_4633205526024838", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5721821437122807", "label": "drug_exposure_id_5721821437122807", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3842826423681681", "label": "drug_exposure_id_3842826423681681", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2139702551374261", "label": "drug_exposure_id_2139702551374261", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3699646532966243", "label": "drug_exposure_id_3699646532966243", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8373760849092977", "label": "drug_exposure_id_8373760849092977", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5219669902688163", "label": "drug_exposure_id_5219669902688163", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_320450054098415", "label": "drug_exposure_id_320450054098415", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3330836851821922", "label": "drug_exposure_id_3330836851821922", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_4107108745512203", "label": "person_id_4107108745512203", "shape": "dot", "size": 20}, {"color": "#97c2fc", "id": "drug_exposure_id_4451635488046211", "label": "drug_exposure_id_4451635488046211", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3724268607071327", "label": "drug_exposure_id_3724268607071327", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8758701692047496", "label": "drug_exposure_id_8758701692047496", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_70859798695355", "label": "drug_exposure_id_70859798695355", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1317979231537146", "label": "drug_exposure_id_1317979231537146", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6681367385895186", "label": "drug_exposure_id_6681367385895186", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_821164210411544", "label": "drug_exposure_id_821164210411544", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6317681826354594", "label": "drug_exposure_id_6317681826354594", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5301463460963233", "label": "drug_exposure_id_5301463460963233", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_751264706544517", "label": "drug_exposure_id_751264706544517", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7915656819927548", "label": "drug_exposure_id_7915656819927548", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6920261107311887", "label": "drug_exposure_id_6920261107311887", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1504239805141469", "label": "drug_exposure_id_1504239805141469", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6805437237030132", "label": "drug_exposure_id_6805437237030132", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6316456070288067", "label": "drug_exposure_id_6316456070288067", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4226958811948178", "label": "drug_exposure_id_4226958811948178", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1853959786238834", "label": "drug_exposure_id_1853959786238834", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1929579265244441", "label": "drug_exposure_id_1929579265244441", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3865019647817614", "label": "drug_exposure_id_3865019647817614", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1975321241007933", "label": "drug_exposure_id_1975321241007933", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_601475176545263", "label": "person_id_601475176545263", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "drug_exposure_id_6221894899947836", "label": "drug_exposure_id_6221894899947836", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2841442331147788", "label": "drug_exposure_id_2841442331147788", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5752963204519392", "label": "drug_exposure_id_5752963204519392", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1806846850184295", "label": "drug_exposure_id_1806846850184295", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1216358274903313", "label": "drug_exposure_id_1216358274903313", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8182873385115800", "label": "drug_exposure_id_8182873385115800", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2180258383708062", "label": "drug_exposure_id_2180258383708062", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5384249682357339", "label": "drug_exposure_id_5384249682357339", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3257552142942390", "label": "drug_exposure_id_3257552142942390", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3109550251999446", "label": "drug_exposure_id_3109550251999446", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_1758302236924648", "label": "person_id_1758302236924648", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1513013502213976", "label": "drug_exposure_id_1513013502213976", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_5678135080111233", "label": "person_id_5678135080111233", "shape": "dot", "size": 20}, {"color": "#97c2fc", "id": "drug_exposure_id_5343891653950457", "label": "drug_exposure_id_5343891653950457", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5376052800695996", "label": "drug_exposure_id_5376052800695996", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7247328566250566", "label": "drug_exposure_id_7247328566250566", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5327403071144026", "label": "drug_exposure_id_5327403071144026", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8331263118410675", "label": "drug_exposure_id_8331263118410675", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_919043036533482", "label": "drug_exposure_id_919043036533482", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8506199351631658", "label": "drug_exposure_id_8506199351631658", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7087626858392007", "label": "drug_exposure_id_7087626858392007", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4086654865368483", "label": "drug_exposure_id_4086654865368483", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7266421645208073", "label": "drug_exposure_id_7266421645208073", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3900365533490219", "label": "drug_exposure_id_3900365533490219", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2502162696530676", "label": "drug_exposure_id_2502162696530676", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4301882002011806", "label": "drug_exposure_id_4301882002011806", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2890896219975820", "label": "drug_exposure_id_2890896219975820", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6309069691945488", "label": "drug_exposure_id_6309069691945488", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6175476414553252", "label": "drug_exposure_id_6175476414553252", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_8883365172427810", "label": "drug_exposure_id_8883365172427810", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7704733280383419", "label": "drug_exposure_id_7704733280383419", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4498574623014105", "label": "drug_exposure_id_4498574623014105", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6056201194485203", "label": "drug_exposure_id_6056201194485203", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_1175042839979859", "label": "person_id_1175042839979859", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "drug_exposure_id_2796848800248737", "label": "drug_exposure_id_2796848800248737", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_4341324273874908", "label": "drug_exposure_id_4341324273874908", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1863205984318974", "label": "drug_exposure_id_1863205984318974", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_638856402197124", "label": "drug_exposure_id_638856402197124", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5572751668634152", "label": "drug_exposure_id_5572751668634152", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6103616315978364", "label": "drug_exposure_id_6103616315978364", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3348656824194457", "label": "drug_exposure_id_3348656824194457", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1077519728957675", "label": "drug_exposure_id_1077519728957675", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7836457479237764", "label": "drug_exposure_id_7836457479237764", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3158294524270012", "label": "drug_exposure_id_3158294524270012", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_5757354914575627", "label": "person_id_5757354914575627", "shape": "dot", "size": 8}, {"color": "#97c2fc", "id": "drug_exposure_id_786296945579754", "label": "drug_exposure_id_786296945579754", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_7581876095913566", "label": "drug_exposure_id_7581876095913566", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_6058438924657163", "label": "drug_exposure_id_6058438924657163", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2287382651840938", "label": "drug_exposure_id_2287382651840938", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3790729280729400", "label": "drug_exposure_id_3790729280729400", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1761944461656635", "label": "drug_exposure_id_1761944461656635", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_3124858992119784", "label": "drug_exposure_id_3124858992119784", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_2630786388146157", "label": "drug_exposure_id_2630786388146157", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_35092165729618", "label": "person_id_35092165729618", "shape": "dot", "size": 4}, {"color": "#97c2fc", "id": "drug_exposure_id_1932843877470658", "label": "drug_exposure_id_1932843877470658", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_1226441765425775", "label": "drug_exposure_id_1226441765425775", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "drug_exposure_id_5230558556355738", "label": "drug_exposure_id_5230558556355738", "shape": "dot", "size": 1}]);
+                  edges = new vis.DataSet([{"from": "drug_exposure_id_4635955223603799", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_7875054233303023", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_6244000366486440", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_6298160023483616", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_6348649864653869", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_1755713904695286", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_4626106537613179", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_7514713921713326", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_4270805493435348", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_957343825438856", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_599295747218609", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_8228822809005042", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_1798294980109687", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_1300093645790922", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_2422401152708180", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_1339256052685649", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_3723080862624726", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_2436285772113948", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_1031518120432746", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_4633205526024838", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_5721821437122807", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_3842826423681681", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_2139702551374261", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_3699646532966243", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_8373760849092977", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_5219669902688163", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_320450054098415", "to": "person_id_6728169377552940", "width": 1}, {"from": "drug_exposure_id_3330836851821922", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_4451635488046211", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_3724268607071327", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_8758701692047496", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_70859798695355", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_1317979231537146", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_6681367385895186", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_821164210411544", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_6317681826354594", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_5301463460963233", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_751264706544517", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_7915656819927548", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_6920261107311887", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_1504239805141469", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_6805437237030132", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_6316456070288067", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_4226958811948178", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_1853959786238834", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_1929579265244441", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_3865019647817614", "to": "person_id_4107108745512203", "width": 1}, {"from": "drug_exposure_id_1975321241007933", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_6221894899947836", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_2841442331147788", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_5752963204519392", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_1806846850184295", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_1216358274903313", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_8182873385115800", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_2180258383708062", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_5384249682357339", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_3257552142942390", "to": "person_id_601475176545263", "width": 1}, {"from": "drug_exposure_id_3109550251999446", "to": "person_id_1758302236924648", "width": 1}, {"from": "drug_exposure_id_1513013502213976", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_5343891653950457", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_5376052800695996", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_7247328566250566", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_5327403071144026", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_8331263118410675", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_919043036533482", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_8506199351631658", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_7087626858392007", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_4086654865368483", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_7266421645208073", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_3900365533490219", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_2502162696530676", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_4301882002011806", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_2890896219975820", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_6309069691945488", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_6175476414553252", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_8883365172427810", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_7704733280383419", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_4498574623014105", "to": "person_id_5678135080111233", "width": 1}, {"from": "drug_exposure_id_6056201194485203", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_2796848800248737", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_4341324273874908", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_1863205984318974", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_638856402197124", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_5572751668634152", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_6103616315978364", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_3348656824194457", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_1077519728957675", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_7836457479237764", "to": "person_id_1175042839979859", "width": 1}, {"from": "drug_exposure_id_3158294524270012", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_786296945579754", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_7581876095913566", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_6058438924657163", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_2287382651840938", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_3790729280729400", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_1761944461656635", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_3124858992119784", "to": "person_id_5757354914575627", "width": 1}, {"from": "drug_exposure_id_2630786388146157", "to": "person_id_35092165729618", "width": 1}, {"from": "drug_exposure_id_1932843877470658", "to": "person_id_35092165729618", "width": 1}, {"from": "drug_exposure_id_1226441765425775", "to": "person_id_35092165729618", "width": 1}, {"from": "drug_exposure_id_5230558556355738", "to": "person_id_35092165729618", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -403,6 +665,23 @@ function highlightFilter(filter) {
                   
 
 
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
                   
 
                   return network;
