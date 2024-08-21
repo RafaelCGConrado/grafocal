@@ -1,5 +1,6 @@
 import config 
 import util
+import semantic
 import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_plotly_events import plotly_events
@@ -63,6 +64,12 @@ def eda_tab():
         graph_construct_submitted = form_model_graph.form_submit_button("Criar grafo", use_container_width=True)
 
         if graph_construct_submitted:
+            #teste aqui
+            #
+            #
+            #
+            semantic_label = semantic.extract_semantic_label(config.opt_source, config.opt_destination)
+            st.write(semantic_label)
             tgraph_columns = []
         
             for v in [config.opt_source, config.opt_destination, config.opt_measure, config.opt_timestamp]:
@@ -185,3 +192,4 @@ def eda_tab():
 
     else:
         st.write("Carregue os dados da consulta!")
+
