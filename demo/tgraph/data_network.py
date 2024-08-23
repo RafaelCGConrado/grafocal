@@ -15,10 +15,6 @@ class DataNetwork():
                  measure=None,
                  timestamp=None):
         
-        # if filename is not None:
-        #     self.filename = filename
-        #     self.df = pd.read_csv(filename)
-        # else:
         self.df = df
         
         # We should have at least SOURCE and DESTINATION columns

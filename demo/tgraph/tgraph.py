@@ -25,15 +25,6 @@ class TGraph(): # Changed here for fp-dash: we can pass the dataframe as paramet
         if fn.TIMESTAMP in self.data_network.headers:
             tg = temporal_graph.TemporalGraph(self.data_network)
             tg.graph2vec()
-
-        # if verbose > 1:
-        # self.my_print()
-        # print("\n\n ----")
-        # self.print_to_csv("allFeatures_nodeVectors.csv")
-        # print(" check the file nodeVectors.csv ")
-
-        # print("---------------")
-            
             
     def my_print(self):
         """

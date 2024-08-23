@@ -7,6 +7,7 @@ df_query_result = None
 df_tgraph_features = None
 
 available_features = None 
+available_features_translate = None
 NxGraph = None 
 
 df_query_supervision = None 
