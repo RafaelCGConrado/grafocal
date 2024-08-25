@@ -9,12 +9,32 @@ Model to Exploit the Interoperability of Patient Databases
 **Conference:** [Simpósio Brasileiro de Bases de Dados, 2024 @ Florianópolis, Brazil.](https://sbbd.org.br/2024/)
 
 Please cite the paper as:
-colocar aqui
 
+```
+@inproceedings{conrado2024grafocal,
+  title={{GraFOCAL:} Combining Semantic Graph Features and a Common Data Model to Exploit the Interoperability of Patient Databases},
+  author={Conrado, R.C.G and Cazzolato, M.T and Traina, A.J.M and Traina JR, C. and Gutierrez, M.A.},
+  booktitle={2024 Simpósio Brasileiro de Bases de Dados (SBBD)},
+  year={2024},
+  organization={SBC},
+}
+```
 ## Requirements
 
+Check file `requirements.txt`
 
+To create and use a virtual environment, type:
+
+    python -m venv grafocal_venv
+    source grafocal_venv/bin/activate
+    pip install -r requirements.txt
+ 
+ 
 ## Running the app
+
+Run the app with the following command on your Terminal:  
+streamlit run demo/main.py
+
 
 ## Data Sample
 
