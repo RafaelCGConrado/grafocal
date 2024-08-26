@@ -33,7 +33,8 @@ To create and use a virtual environment, type:
 ## Running the app
 
 Run the app with the following command on your Terminal:  
-streamlit run demo/main.py
+
+    streamlit run demo/main.py
 
 
 ## Data Sample
