@@ -87,7 +87,7 @@ def extract_semantic_label(table1, table2):
     if(table1, table2) in semantic_relationship_label:
         return semantic_relationship_label[(table1, table2)]
     else:
-        return "not defined" 
+        return "undefined" 
 
 
 def extract_semantic_feature(table1, table2, feature):
