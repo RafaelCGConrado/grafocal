@@ -21,7 +21,7 @@ Please cite the paper as:
     YEAR="2024",
     ABSTRACT="Given a set of Electronic Health Records (EHRs), how can we semantically model the available concepts and provide tools for data analysis? EHRs following a common data model (CDM) such as OMOP usually provide meaningful organization and vocabulary to health-related databases, prompting data interoperability. However, hidden relationships among attributes within the CDM bring the need for CDM-tailored analysis tools regarding exploratory tasks. We propose GraFOCAL for analyzing CDM-based databases considering semantic graph features. GraFOCAL combines pairs of attributes with semantic descriptions in graph edges and node features. Preliminary results show the usefulness of GraFOCALs features and visual tools in spotting findings in a real-world dataset. In future work, we aim to extend the proposed approach with automatic knowledge inference for the semantic linkage between variables.",
     KEYWORDS="Data mining and analytics; Graphs, networks and semistructured data management; Information integration and interoperability; Knowledge bases, knowledge graphs, and modeling",
-    URL="http://XXXXX/243153.pdf"
+    URL="[http://XXXXX/243153.pdf](https://sol.sbc.org.br/index.php/sbbd/article/view/30735)"
 }
 ```
 ## Requirements
