@@ -1,6 +1,11 @@
-drug_exposure_id,person_id,drug_concept_id,drug_exposure_start_date,drug_exposure_start_datetime,drug_exposure_end_date,drug_exposure_end_datetime,verbatim_end_date,drug_type_concept_id,stop_reason,refills,quantity,days_supply,sig,route_concept_id,lot_number,provider_id,visit_occurrence_id,visit_detail_id,drug_source_value,drug_source_concept_id,route_source_value,dose_unit_source_value
-4635955223603799,6728169377552940,2000004486,2009-10-12,,2009-10-15,,,38000175,,,,,[NULL],,,,7709559773995503,,ITGE/E/12017279,2000004486,,
-7875054233303023,6728169377552940,2000002476,2009-10-14,,2009-10-14,,,38000175,,,1.0,,[NULL],4132161.0,,,7709559773995503,,ITGE/E/11275121,2000002476,vo,MILILITRO
-6244000366486440,6728169377552940,2000004486,2009-10-14,,2009-10-14,,,38000175,,,,,[NULL],,,,7709559773995503,,ITGE/E/12017279,2000004486,,
-6298160023483616,6728169377552940,2000003078,2009-10-14,,2009-10-14,,,38000175,,,,,[NULL],,,,7709559773995503,,ITGE/E/11350237,2000003078,,
-6348649864653869,6728169377552940,2000000315,2009-10-14,,2009-10-14,,,38000175,,,,,[NULL],,,,7709559773995503,,ITGE/E/1135403X,2000000315,,
+person_id,gender_concept_id,year_of_birth,month_of_birth,day_of_birth,birth_datetime,race_concept_id,ethnicity_concept_id,location_id,provider_id,care_site_id,person_source_value,gender_source_value,gender_source_concept_id,race_source_value,race_source_concept_id,ethnicity_source_value,ethnicity_source_concept_id
+624804808617161,8532,1955,,,,8527,0,,,,,F,,2,,,
+8740536328977578,0,1934,,,,8527,0,,,,,O,,2,,,
+6650452721732393,8532,1963,,,,0,0,,,,,F,,3,,,
+5819485657145243,0,1935,,,,0,0,,,,,D,,,,,
+2969869408543475,8532,1945,,,,8515,0,,,,,F,,2,,,
+2253805475728193,8507,1977,,,,0,0,,,,,M,,3,,,
+1386562355618799,8507,1926,,,,8527,0,,,,,M,,2,,,
+6105754158732364,8507,1944,,,,8516,0,,,,,M,,5,,,
+6697094808095985,8532,1975,,,,8527,0,,,,,F,,2,,,
+6190171098425444,8507,1987,,,,8515,0,,,,,M,,2,,,

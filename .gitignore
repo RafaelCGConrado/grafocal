@@ -3,3 +3,8 @@
 /__pycache__
 demo/tgraph/__pycache__/static_graph.cpython-38.pyc
 *.pyc
+demo/Resultados_consulta.csv
+*.html
+demo/Resultados_consulta.csv
+*.html
+*.csv

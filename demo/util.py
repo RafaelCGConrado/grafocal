@@ -20,17 +20,19 @@ figsize=[8, 6]
 
 
 def run_query(sql_statement):
-
     try:
         df_query_result = pd.read_sql(sql_statement, con=config.connection)
         print("Consulta realizada com sucesso")
+        return df_query_result
 
     except Exception as ex:
-        print(ex)
-        print("Erro ao realizar a consulta")
-        df_query_result = None
+        print(f'Erro ao realizar a consulta: {ex}')
+        try:
+            config.connection.rollback()
+        except Exception as rollback_ex:
+            print("Erro no rollback")
+        return None
 
-    return df_query_result
 
 
 def run_t_graph(df, source, destination, measure, timestamp):

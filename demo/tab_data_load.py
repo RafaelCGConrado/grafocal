@@ -17,6 +17,9 @@ def data_load_tab():
             sql_submitted = form_sql_statement.form_submit_button("Fazer consulta", use_container_width=True)
 
             if sql_submitted:
+                config.df_query_result = None
+                config.flag_data_loaded = False
+
                 config.df_query_result = util.run_query(sql_statement)
 
             if config.df_query_result is not None:
@@ -28,4 +31,5 @@ def data_load_tab():
                 config.df_query_result.to_csv("Resultados_consulta.csv", index=False)
             
             else:
+                config.flag_data_loaded = False
                 st.error("Erro ao carregar consulta. Confira o comando SQL informado")
