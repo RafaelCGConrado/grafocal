@@ -261,13 +261,15 @@ function highlightFilter(filter) {
                             >
                                 <option selected>Select a Node by ID</option>
                                 
-                                    <option value="person_id_624804808617161">person_id_624804808617161</option>
+                                    <option value="SEX_male">SEX_male</option>
                                 
-                                    <option value="gender_concept_id_8532">gender_concept_id_8532</option>
+                                    <option value="ANOREXIA_no">ANOREXIA_no</option>
                                 
-                                    <option value="person_id_8740536328977578">person_id_8740536328977578</option>
+                                    <option value="ANOREXIA_yes">ANOREXIA_yes</option>
                                 
-                                    <option value="gender_concept_id_0">gender_concept_id_0</option>
+                                    <option value="SEX_female">SEX_female</option>
+                                
+                                    <option value="ANOREXIA_?">ANOREXIA_?</option>
                                 
                             </select>
                         </div>
@@ -321,8 +323,8 @@ function highlightFilter(filter) {
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "person_id_624804808617161", "label": "person_id_624804808617161", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "gender_concept_id_8532", "label": "gender_concept_id_8532", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "person_id_8740536328977578", "label": "person_id_8740536328977578", "shape": "dot", "size": 1}, {"color": "#97c2fc", "id": "gender_concept_id_0", "label": "gender_concept_id_0", "shape": "dot", "size": 1}]);
-                  edges = new vis.DataSet([{"from": "person_id_624804808617161", "to": "gender_concept_id_8532", "width": 1}, {"from": "person_id_8740536328977578", "to": "gender_concept_id_0", "width": 1}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "SEX_male", "label": "SEX_male", "shape": "dot", "size": 2}, {"color": "#97c2fc", "id": "ANOREXIA_no", "label": "ANOREXIA_no", "shape": "dot", "size": 2}, {"color": "#97c2fc", "id": "ANOREXIA_yes", "label": "ANOREXIA_yes", "shape": "dot", "size": 2}, {"color": "#97c2fc", "id": "SEX_female", "label": "SEX_female", "shape": "dot", "size": 3}, {"color": "#97c2fc", "id": "ANOREXIA_?", "label": "ANOREXIA_?", "shape": "dot", "size": 1}]);
+                  edges = new vis.DataSet([{"from": "SEX_male", "to": "ANOREXIA_no", "width": 1}, {"from": "SEX_male", "to": "ANOREXIA_yes", "width": 1}, {"from": "SEX_female", "to": "ANOREXIA_no", "width": 1}, {"from": "SEX_female", "to": "ANOREXIA_yes", "width": 1}, {"from": "SEX_female", "to": "ANOREXIA_?", "width": 1}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
