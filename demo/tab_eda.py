@@ -16,10 +16,12 @@ def eda_tab():
 
             with cc1:
                 hasSource = st.checkbox(label="Origem", value=True, disabled=True)
+                config.source_node_color = st.color_picker("Cor dos vértices de origem", "#FF0000")
 
             with cc2:
                 hasDestination = st.checkbox(label="Destino", value=True, disabled=True)
-            
+                config.destination_node_color = st.color_picker("Cor dos vértices de destino", "#FF0000")
+
             with cc3:
                 hasMeasure = st.checkbox(label="Peso", value=False)
             

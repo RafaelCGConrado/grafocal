@@ -24,6 +24,8 @@ opt_source = None
 opt_destination = None 
 opt_timestamp = None
 opt_measure = None
+source_node_color = None
+destination_node_color = None
 
 #io
 feature_file_path = None

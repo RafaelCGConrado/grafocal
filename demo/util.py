@@ -197,24 +197,12 @@ def plot_lasso_scatter_matrix():
 def plot_interactive_graph_pyvis():
     nt = Network(height='800px',
                  width='100%',
-                #  bgcolor='#222222',
-                #  font_color='white'
                  select_menu=True,
-                #  notebook=True,
                  cdn_resources='remote'
                  )
-    
+
     # Use node degree as node size
     nx.set_node_attributes(config.NxGraph, dict(config.NxGraph.degree()), 'size')
-
-    # Generate network with specific layout settings
-    # nt.repulsion(
-                    # node_distance=420,
-                    # central_gravity=0.33,
-                    # spring_length=110,
-                    # spring_strength=0.10,
-                    # damping=0.95
-                # )
 
     nt.from_nx(config.NxGraph)
 
@@ -222,7 +210,6 @@ def plot_interactive_graph_pyvis():
     nt.save_graph('Graph.html')
 
     HtmlFile = open(f'Graph.html', 'r', encoding='utf-8')
-    
     return HtmlFile
 
 def get_template(feature_name):

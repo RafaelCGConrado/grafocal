@@ -1,10 +1,16 @@
 import sys
+import os
 import argparse
 import pandas as pd
 import networkx as nx
 import numpy as np
 import fn # feature names
 
+#ARRUMAR ESSA BAGUNÇA DEPOIS
+current_dir = os.path.dirname(os.path.abspath(__file__))  
+parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir)) 
+sys.path.insert(0, parent_dir)
+import config
 
 class DataNetwork():
     
@@ -63,6 +69,9 @@ class DataNetwork():
         self.df_nodes = pd.DataFrame(self.set_of_nodes)
         self.df_nodes.columns = [fn.NODE_ID]
         
+        #Assign node colors
+        self.node_colors = self.assign_node_color() 
+
         if measure:
             self.G = nx.from_pandas_edgelist(self.df,
                                              source=fn.SOURCE,
@@ -75,10 +84,25 @@ class DataNetwork():
                                              source=fn.SOURCE,
                                              target=fn.DESTINATION,
                                              create_using=nx.DiGraph())
-    
+
+        nx.set_node_attributes(self.G, self.node_colors, 'color')
         
     def get_node_set(self):
         set_of_unique_sources = set( self.df[fn.SOURCE].unique())
         set_of_unique_destinations = set(self.df[fn.DESTINATION].unique())
         set_nodes = set( set_of_unique_sources |set_of_unique_destinations)
         return(set_nodes)
+
+    def assign_node_color(self):
+        color_map = {}
+
+        for node in self.set_of_nodes:
+            #Caso seja vértice de origem
+            if node in set(self.df[fn.SOURCE]):
+                color_map[node] = config.source_node_color
+            #Caso seja vértice de destino
+            elif node in set(self.df[fn.DESTINATION]):
+                color_map[node] = config.destination_node_color
+            
+        return color_map
+
