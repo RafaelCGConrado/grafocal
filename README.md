@@ -8,7 +8,7 @@ Model to Exploit the Interoperability of Patient Databases
 
 **Conference:** [Simpósio Brasileiro de Bases de Dados, 2024 @ Florianópolis, Brazil.](https://sbbd.org.br/2024/)
 
-**Paper Available at:** [https://sol.sbc.org.br/index.php/sbbd/article/view/30735]
+**Paper Available at:** https://sol.sbc.org.br/index.php/sbbd/article/view/30735
 
 Please cite the paper as:
 
